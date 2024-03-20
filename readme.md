@@ -12,6 +12,8 @@ pnpm install
 pnpm run dev
 ```
 
+Then, navigate to `http://localhost:3000/users/1` to see an example response.
+
 ## Deploy
 
 ```sh
