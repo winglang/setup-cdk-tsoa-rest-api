@@ -34,5 +34,5 @@ This application consists of:
 ## Try the example
 
 - Deploy the application
-- Retrieve the `TsoaStack` endpoint output (eg, ``https://xxx.execute-api.xxx.amazonaws.com/prod/`)
+- Retrieve the `TsoaStack` endpoint output (eg, `https://xxx.execute-api.xxx.amazonaws.com/prod/`)
 - Navigate to `https://xxx.execute-api.xxx.amazonaws.com/prod/users/1` to see an example response
