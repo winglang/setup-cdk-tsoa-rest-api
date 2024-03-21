@@ -40,6 +40,7 @@ swagger.paths = {
 				Object.entries(value).map(([key, value]: [string, any]) => [
 					key,
 					{
+						// QUESTION (Niv): Is this something you are doing as well? 
 						...value,
 						"x-amazon-apigateway-integration": {
 							type: "aws_proxy",

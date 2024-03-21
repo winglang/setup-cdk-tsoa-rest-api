@@ -15,4 +15,5 @@ RegisterRoutes(app);
 
 import serverlessExpress from "@codegenie/serverless-express";
 
+// QUESTION (Niv): I think you have a handler for every controller
 export const handler = serverlessExpress({ app });
