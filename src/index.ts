@@ -29,6 +29,8 @@ const swagger = JSON.parse(
 // Note that the swagger file has previously been flattened by `openapi-flattener`.
 delete swagger.components?.schemas;
 
+
+
 // Add the `x-amazon-apigateway-integration` property to the paths.
 swagger.paths = {
 	...Object.fromEntries(
@@ -40,6 +42,8 @@ swagger.paths = {
 				Object.entries(value).map(([key, value]: [string, any]) => [
 					key,
 					{
+						// QUESTION (Cristian): This is added for every path?
+						// QUESTION (Cristian): What happends if there are more then one controller
 						...value,
 						"x-amazon-apigateway-integration": {
 							type: "aws_proxy",

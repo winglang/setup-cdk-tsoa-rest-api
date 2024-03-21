@@ -19,6 +19,7 @@ export class UsersController extends Controller {
 		@Path() userId: number,
 		@Query() name?: string,
 	): Promise<User> {
+		console.log(userId, name);
 		return new UsersService().get(userId, name);
 	}
 
@@ -28,6 +29,9 @@ export class UsersController extends Controller {
 		@Body() requestBody: UserCreationParams,
 	): Promise<void> {
 		this.setStatus(201); // set return status 201
+		// Question (Elad): What happens if they do bucket.put here
+		// 1. Where do they get the bucket from?
+		// 2. How do they get permissions for it
 		new UsersService().create(requestBody);
 		return;
 	}
