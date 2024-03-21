@@ -29,8 +29,6 @@ const swagger = JSON.parse(
 // Note that the swagger file has previously been flattened by `openapi-flattener`.
 delete swagger.components?.schemas;
 
-
-
 // Add the `x-amazon-apigateway-integration` property to the paths.
 swagger.paths = {
 	...Object.fromEntries(
