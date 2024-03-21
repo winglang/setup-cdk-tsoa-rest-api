@@ -1,5 +1,4 @@
 import express, { json, urlencoded } from "express";
-// QUESTION (Cristian): is this the BKM (using the build artifact), does it work with 
 import { RegisterRoutes } from "../build/routes.js";
 
 export const app = express();
