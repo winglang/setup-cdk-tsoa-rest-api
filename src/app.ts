@@ -13,9 +13,6 @@ app.use(json());
 
 RegisterRoutes(app);
 
-// QUESTION (Elad): Consider creating our own wing-express adapter "@winglang/wing-express";
-// export const handler = wingExpress({ app });
-
 import serverlessExpress from "@codegenie/serverless-express";
 
 // QUESTION (Cristian): What happens if there are more then one controller
