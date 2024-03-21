@@ -1,13 +1,10 @@
-lockfileVersion: '6.0'
+lockfileVersion: '6.1'
 
 settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
 dependencies:
-  '@codegenie/serverless-express':
-    specifier: ^4.14.0
-    version: 4.14.0
   aws-cdk:
     specifier: ^2.133.0
     version: 2.133.0
@@ -23,6 +20,9 @@ dependencies:
   nanoid:
     specifier: ^5.0.6
     version: 5.0.6
+  serverless-http:
+    specifier: ^3.2.0
+    version: 3.2.0
   tsoa:
     specifier: ^6.1.5
     version: 6.1.5
@@ -108,11 +108,6 @@ packages:
     dependencies:
       regenerator-runtime: 0.14.1
     dev: true
-
-  /@codegenie/serverless-express@4.14.0:
-    resolution: {integrity: sha512-74hOQzHz+rEhDtTKIdAZ/Gks/PGc9JHxKULBrVl5WBComGv6ceJHewdEKNfDtwPo7d1LKidNFJ2QXGO5pZr2tQ==}
-    engines: {node: '>=12'}
-    dev: false
 
   /@esbuild/aix-ppc64@0.19.12:
     resolution: {integrity: sha512-bmoCYyWdEL3wDQIVbcyzRyeKLgk2WtWLTWz1ZIAZF/EGbNOwSA6ew3PftJ1PqMiOOGu0OyFMzG53L0zqIpPeNA==}
@@ -2598,6 +2593,11 @@ packages:
       send: 0.18.0
     transitivePeerDependencies:
       - supports-color
+
+  /serverless-http@3.2.0:
+    resolution: {integrity: sha512-QvSyZXljRLIGqwcJ4xsKJXwkZnAVkse1OajepxfjkBXV0BMvRS5R546Z4kCBI8IygDzkQY0foNPC/rnipaE9pQ==}
+    engines: {node: '>=12.0'}
+    dev: false
 
   /set-function-length@1.2.2:
     resolution: {integrity: sha512-pgRc4hJ4/sNjWCSS9AmnS40x3bNMDTknHgL5UaMBTMyJnU90EgWh1Rz+MC9eFu4BuN/UwZjKQuY/1v3rM7HMfg==}

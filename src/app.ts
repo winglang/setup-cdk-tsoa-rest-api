@@ -13,6 +13,6 @@ app.use(json());
 
 RegisterRoutes(app);
 
-import serverlessExpress from "@codegenie/serverless-express";
+import serverlessHttp from "serverless-http";
 
-export const handler = serverlessExpress({ app });
+export const handler = serverlessHttp(app);
