@@ -42,8 +42,7 @@ swagger.paths = {
 				Object.entries(value).map(([key, value]: [string, any]) => [
 					key,
 					{
-						// QUESTION (Cristian): This is added for every path?
-						// QUESTION (Cristian): What happends if there are more then one controller
+						// QUESTION (Niv): Is this something you are doing as well? 
 						...value,
 						"x-amazon-apigateway-integration": {
 							type: "aws_proxy",
