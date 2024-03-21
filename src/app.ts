@@ -15,6 +15,5 @@ RegisterRoutes(app);
 
 import serverlessExpress from "@codegenie/serverless-express";
 
-// QUESTION (Cristian): What happens if there are more then one controller
 // QUESTION (Niv): I think you have a handler for every controller
 export const handler = serverlessExpress({ app });
